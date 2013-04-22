@@ -45,7 +45,7 @@ Feature: So that hard copy printout of missing child photos are available
     And I press "Export to PDF"
     When I fill in "abcd" for "password-prompt-field"
     And I click the "OK" button
-
+    And I wait for 5 seconds
     Then I should see "You must select at least one record to be exported"
 
 

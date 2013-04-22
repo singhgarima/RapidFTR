@@ -1,4 +1,4 @@
-<% if can? :export, Child %>
+<% if can?(:export_photowall, Child) or can?(:export_pdf, Child) or can?(:export_csv, Child) %>
     <div class="btn dropdown_btn btn_export">
       <span class="export">
         <a href="#"> <%= t("children.export") %> </a>
